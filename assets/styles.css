@@ -52,21 +52,25 @@ a:hover{ text-decoration:underline; }
   margin:0;
 }
 
-/* Mobile-first: images should be fluid, never overflow, and avoid towering above the text. */
+/* Mobile-first: images should be fluid, never overflow, and not dominate the page. */
 .figure img{
   display:block;
   width:100%;
-  /* Mobile-first: constrain vertical space while keeping a pleasant banner-like crop. */
-  height:48vh;
-  max-height:520px;
-  object-fit:cover;
+  height:auto;
   border-radius:14px;
 }
 
+/* Entry images: keep a consistent, mobile-friendly “storybook panel” proportion. */
+.figure--entry img{
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  /* Prevent extremely tall images on tiny screens */
+  max-height: 52vh;
+}
+
 @media (min-width: 860px){
-  .figure img{
-    height:520px;
-    max-height:520px;
+  .figure--entry img{
+    max-height: 520px;
   }
 }
 
