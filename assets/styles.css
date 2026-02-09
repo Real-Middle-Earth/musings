@@ -56,15 +56,17 @@ a:hover{ text-decoration:underline; }
 .figure img{
   display:block;
   width:100%;
-  height:auto;
-  max-height:52vh;
+  /* Mobile-first: constrain vertical space while keeping a pleasant banner-like crop. */
+  height:48vh;
+  max-height:520px;
   object-fit:cover;
   border-radius:14px;
 }
 
 @media (min-width: 860px){
   .figure img{
-    max-height:560px;
+    height:520px;
+    max-height:520px;
   }
 }
 
