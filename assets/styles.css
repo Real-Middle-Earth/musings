@@ -60,17 +60,17 @@ a:hover{ text-decoration:underline; }
   border-radius:14px;
 }
 
-/* Entry images: keep a consistent, mobile-friendly “storybook panel” proportion. */
+/* Entry images: mobile-first “storybook panel” sizing.
+   Use a bounded height so the image never overwhelms the text on small screens. */
 .figure--entry img{
-  aspect-ratio: 16 / 9;
+  width: 100%;
+  height: clamp(220px, 34vh, 360px);
   object-fit: cover;
-  /* Prevent extremely tall images on tiny screens */
-  max-height: 52vh;
 }
 
 @media (min-width: 860px){
   .figure--entry img{
-    max-height: 520px;
+    height: 520px;
   }
 }
 
