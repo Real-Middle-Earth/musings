@@ -88,6 +88,7 @@ a:hover{ text-decoration:underline; }
   height:260px;
   background: radial-gradient(circle at 30% 30%, rgba(43,111,90,.22), rgba(43,111,90,0));
   transform: rotate(12deg);
+  pointer-events:none; /* never block clicks on nav pills beneath */
 }
 
 .kicker{
