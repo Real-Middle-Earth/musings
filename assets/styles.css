@@ -89,6 +89,7 @@ a:hover{ text-decoration:underline; }
   background: radial-gradient(circle at 30% 30%, rgba(43,111,90,.22), rgba(43,111,90,0));
   transform: rotate(12deg);
   pointer-events:none; /* never block clicks on nav pills beneath */
+  z-index: 0;
 }
 
 .kicker{
@@ -116,6 +117,8 @@ h1,h2,h3{line-height:1.2; margin:0 0 10px;}
   gap:12px;
   flex-wrap:wrap;
   margin-top:14px;
+  position: relative;
+  z-index: 2; /* ensure nav stays above decorative header pseudo-elements */
 }
 
 .pill{
