@@ -2,7 +2,7 @@
 
 > Daily notes from Bilbo Baggins of Bag End — a small red book of big roads.
 
-Welcome, dear traveller.
+Welcome, dear traveler.
 
 This repository is my quiet corner of the Shire set down in ink: **daily musings about my journeys in Middle Earth** — including recollections from my book *The Hobbit*, scraps from the road, and the occasional observation best shared by a warm hearth.
 
